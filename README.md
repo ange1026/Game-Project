@@ -22,7 +22,7 @@ As an user, I want the ability to...
  -Restart the game.
 
 ## Wireframes / Screenshots
-
+![IMG_0457](https://user-images.githubusercontent.com/77081100/190916477-f9db13d5-9925-459d-9558-c8dfc857be13.jpg)
 
 ## Entity Relationship Diagrams(ERDs)
 
