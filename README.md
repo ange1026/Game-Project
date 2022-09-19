@@ -6,7 +6,7 @@
 
 NumberScape is a game inspired in my favorite Dominican game from my childhood called Parchis. This game consist in two or more players competing with eachother to reach the goal. What keeps the game interesting are the obstacles that the players have to pass through to win the game.
 
-   //// Technologies used: ////
+Technologies used:
    1. HTML
    2. CSS
    3. JAVASCRIPT
@@ -23,6 +23,17 @@ As an user, I want the ability to...
 
 ## Wireframes / Screenshots
 
+
+## Entity Relationship Diagrams(ERDs)
+
+Players: {
+   height: same height
+   width: same width
+   color: red and blue
+   alive: true
+}
+
+function - Math.floor and Math.random - to create a random numer from 1-6 so the user can move their token.
 
 
 
