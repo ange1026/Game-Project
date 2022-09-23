@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet"> -->
+    <title>NumberScape</title>
+
+</head>
+<body>
+    <section class="title">
+        <h1>NumberScape</h1>
+    </section>
+
+    <div id="turns">
+    <div class="red-player">
+      Red's turn
+    </div>
+    <p id="divider">|</p>
+    <div class="blue-player">
+        Blue's turn
+    </div>
+    </div>
+
+     <!-- <section class="display">
+        <span class="display-player playerRed">Red</span> player turn
+     </section> -->
+
+     <div id="container">
+        <div class="generator">
+            <input type="text" id="input" name="input">
+            <br>
+            <input id="generate" type="button" value="Generate number" onclick="randomValue();">
+        </div>
+        
+        <div class="board">
+           <div id="tile32" class="tile">32</div>
+           <div id="tile33" class="tile">33</div>
+           <div id="backtothestart2" class="tile">GO BACK TO THE START</div>
+           <div id="tile34" class="tile">34</div>
+           <div id="tile35" class="tile">35</div>
+           <div id="goal" class="tile">GOAL</div>
+
+           <div id="tile31" class="tile">31</div>
+           <div id="tile30" class="tile">30</div>
+           <div id="tile29" class="tile">29</div>
+           <div id="tile28" class="tile">28</div>
+           <div id="tile27" class="tile">27</div>
+           <div id="tile26" class="tile">26</div>
+
+           <div id="tile21" class="tile">21</div>
+           <div id="tile22" class="tile">22</div>
+           <div id="tile23" class="tile">23</div>
+           <div id="gobackto14" class="tile">GO BACK TO 14</div>
+           <div id="tile24" class="tile">24</div>
+           <div id="tile25" class="tile">25</div>
+
+           <div id="advanceto30" class="tile">ADVANCE TO 30</div>
+           <div id="tile20" class="tile">20</div>
+           <div id="tile19" class="tile">19</div>
+           <div id="tile18" class="tile">18</div>
+           <div id="tile17" class="tile">17</div>
+           <div id="tile16" class="tile">16</div>
+
+           <div id="tile11" class="tile">11</div>
+           <div id="tile12" class="tile">12</div>
+           <div id="advanceto24" class="tile">ADVANCE TO 24</div>
+           <div id="tile13" class="tile">13</div>
+           <div id="tile14" class="tile">14</div>
+           <div id="tile15" class="tile">15</div>
+
+           <div id="tile10" class="tile">10</div>
+           <div id="tile9" class="tile">9</div>
+           <div id="tile8" class="tile">8</div>
+           <div id="tile7" class="tile">7</div>
+           <div id="gobacktothestart1" class="tile">GO BACK TO THE START</div>
+           <div id="tile6" class="tile">6</div>
+
+           <div id="start" class="tile">
+            START
+            <br>
+            <img onclick="selectPiece();" src="red_token.png" class="redtoken">
+            <br>
+            <img onclick="selectPiece();" src="blue_token.png" class="bluetoken">
+           </div>
+           <div id="tile1" class="tile">1</div>
+           <div id="tile2" class="tile">2</div>
+           <div id="tile3" class="tile">3</div>
+           <div id="tile4" class="tile">4</div>
+           <div id="tile5" class="tile">5</div>
+        </div>
+   
+        <div class="rules">
+           <h3>How to play:</h3>
+           <ol>
+            <li>Generate a random number.</li>
+            <li>Move your token to the correct tile.</li>
+            <li>The first one to get to the GOAL tile is the winner.</li>
+           </ol>
+        </div>
+        </div>
+     <section class="display announcer hide"></section>
+
+     <section class="button">
+        <button id="restart">Restart</button>
+     </section>
+    
+<script src="./js/index.js" defer></script>
+
+</body>
+</html>
