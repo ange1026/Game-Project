@@ -20,18 +20,15 @@
     </section>
 
     <div id="turns">
-    <div class="red-player">
+    <div class="red player">
       Red's turn
     </div>
     <p id="divider">|</p>
-    <div class="blue-player">
+    <div class="blue player">
         Blue's turn
     </div>
     </div>
 
-     <!-- <section class="display">
-        <span class="display-player playerRed">Red</span> player turn
-     </section> -->
 
      <div id="container">
         <div class="generator">
@@ -43,7 +40,7 @@
         <div class="board">
            <div id="tile32" class="tile">32</div>
            <div id="tile33" class="tile">33</div>
-           <div id="backtothestart2" class="tile">GO BACK TO THE START</div>
+           <div class="tile backtothestart">GO BACK TO THE START</div>
            <div id="tile34" class="tile">34</div>
            <div id="tile35" class="tile">35</div>
            <div id="goal" class="tile">GOAL</div>
@@ -58,11 +55,11 @@
            <div id="tile21" class="tile">21</div>
            <div id="tile22" class="tile">22</div>
            <div id="tile23" class="tile">23</div>
-           <div id="gobackto14" class="tile">GO BACK TO 14</div>
+           <div id="gobackto14" class="tile" data-target="14">GO BACK TO 14</div>
            <div id="tile24" class="tile">24</div>
            <div id="tile25" class="tile">25</div>
 
-           <div id="advanceto30" class="tile">ADVANCE TO 30</div>
+           <div id="advanceto30" class="tile" data-target="30">ADVANCE TO 30</div>
            <div id="tile20" class="tile">20</div>
            <div id="tile19" class="tile">19</div>
            <div id="tile18" class="tile">18</div>
@@ -71,7 +68,7 @@
 
            <div id="tile11" class="tile">11</div>
            <div id="tile12" class="tile">12</div>
-           <div id="advanceto24" class="tile">ADVANCE TO 24</div>
+           <div id="advanceto24" class="tile" data-target="24">ADVANCE TO 24</div>
            <div id="tile13" class="tile">13</div>
            <div id="tile14" class="tile">14</div>
            <div id="tile15" class="tile">15</div>
@@ -80,15 +77,15 @@
            <div id="tile9" class="tile">9</div>
            <div id="tile8" class="tile">8</div>
            <div id="tile7" class="tile">7</div>
-           <div id="gobacktothestart1" class="tile">GO BACK TO THE START</div>
+           <div class="tile backtothestart">GO BACK TO THE START</div>
            <div id="tile6" class="tile">6</div>
 
            <div id="start" class="tile">
             START
             <br>
-            <img onclick="selectPiece();" src="red_token.png" class="redtoken">
+            <img src="red_token.png" class="redtoken" data-color="red">
             <br>
-            <img onclick="selectPiece();" src="blue_token.png" class="bluetoken">
+            <img src="blue_token.png" class="bluetoken" data-color="blue">
            </div>
            <div id="tile1" class="tile">1</div>
            <div id="tile2" class="tile">2</div>
