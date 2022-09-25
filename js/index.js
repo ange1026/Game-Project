@@ -2,6 +2,7 @@ const allTiles = document.querySelectorAll('.tile');
 const start = document.getElementById('start');
 const players = document.querySelectorAll('.player');
 const restartBtn = document.querySelector('#restart');
+const generate = document.querySelector('#generate');
 
 // Make the tiles clickable
 allTiles.forEach(tile => {
@@ -46,7 +47,7 @@ function play(e) {
             return;
         }
 
-        // Go back to start tile.
+        // Go back to the start tile.
      const isGoBacktoStart = clickedTile.classList.contains("backtothestart");
       if (isGoBacktoStart) {
         start.appendChild(currentToken);
@@ -57,7 +58,19 @@ function play(e) {
       clickedTile.appendChild(currentToken)
 }
 
+   restartBtn.addEventListener('click', () => {
+    document.getElementById('input').value = '';
+    start.appendChild(document.querySelector('.redtoken'));
+    start.appendChild(document.querySelector('.bluetoken'));
+    players.forEach(player => {
+        player.classList.remove('playing')
+    })
+   currentToken = null;
+   })
    
+//    const restart = () => {
+//     randomValue()
+//    }
 
  //  Create a random Number from 1-6
  const randomNumber = () => {
@@ -66,6 +79,8 @@ function play(e) {
  const randomValue = () => {
     document.getElementById('input').value = randomNumber();
  }
+
+ generate.addEventListener('click', randomValue);
 
 
 
