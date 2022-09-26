@@ -68,9 +68,6 @@ function play(e) {
    currentToken = null;
    })
    
-//    const restart = () => {
-//     randomValue()
-//    }
 
  //  Create a random Number from 1-6
  const randomNumber = () => {
