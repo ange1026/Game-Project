@@ -3,7 +3,7 @@
     padding: 0;
     font-family: 'Electrolize', sans-serif;
 }
-
+/* you called .tile twice instead of putting all of the properties together */
 .tile {
     background-color: #DDB892;
     border: solid #7F5539;
